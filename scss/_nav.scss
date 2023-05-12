@@ -1,0 +1,26 @@
+.nav-animal{
+    background-color: $main-color;
+    position: $nav-foot;
+    z-index: $nav-z;
+
+    li{
+        a{
+            color: $secondary-color;
+            text-decoration: none;
+            font-weight: $font-regular;
+            font-size: $nav-size;
+        }
+    }
+    
+    img{
+        width: $favicon-size;
+        animation-name: logo-alpha;
+        animation-duration: 3s;
+    }
+    
+}
+
+@keyframes logo-alpha{
+    from{opacity:0}
+    to{opacity:1}
+}
