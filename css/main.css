@@ -34,7 +34,7 @@
 }
 
 .contenedor-contacto {
-  background-color: rgb(119, 166, 18);
+  background-color: rgba(119, 166, 18, 0.1);
 }
 
 .button-animation, .button-animation-enviar {
@@ -42,11 +42,12 @@
   border: none;
   border-radius: 5px;
   background-color: rgb(119, 166, 18);
+  font-size: 1.3rem;
   padding: 3px;
 }
 .button-animation a, .button-animation-enviar a {
   text-decoration: none;
-  color: rgb(13, 13, 13);
+  color: rgb(40, 64, 3);
 }
 .button-animation:hover, .button-animation-enviar:hover {
   background-color: rgb(40, 64, 3);
@@ -60,7 +61,15 @@
   background-color: rgb(40, 64, 3);
 }
 .button-animation-enviar a {
-  color: white;
+  text-decoration: none;
+  color: rgb(119, 166, 18);
+}
+.button-animation-enviar:hover {
+  background-color: rgb(119, 166, 18);
+  transition: 1s;
+}
+.button-animation-enviar:hover a {
+  color: rgb(40, 64, 3);
 }
 
 * {
@@ -127,17 +136,18 @@ main div article a:hover {
   border-radius: 10px;
 }
 
-.bg-green {
-  background-color: rgb(40, 64, 3);
+.bg-green2 {
+  background-color: rgba(119, 166, 18, 0.3);
+  border-color: rgb(40, 64, 3);
 }
 
-.bg-green2 {
-  background-color: rgb(119, 166, 18);
+.border-contacto {
+  border-color: rgb(40, 64, 3);
 }
 
 figure figcaption {
   color: rgb(13, 13, 13);
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin: 8px;
 }
 

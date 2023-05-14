@@ -40,6 +40,10 @@ h1, h2, h3{
     font-weight: $font-regular;
     margin-bottom: 10px;
 }
+
+span{
+    
+}
     
 main{
     div{
@@ -71,17 +75,18 @@ main{
     border-radius: 10px;
 }
 
-.bg-green{
-    background-color: $secondary-color;
- }
- 
 .bg-green2{
-    background-color: $key-color;
+    background-color: rgba(119, 166, 18, .3);
+    border-color: $secondary-color;
+ }
+
+ .border-contacto{
+    border-color: $secondary-color;
  }
 
 figure figcaption{
     color: $dark-color;
-    font-size: $texts-size;
+    font-size: $figcaption-size;
     margin: 8px;
 }
 
@@ -92,3 +97,7 @@ figure figcaption{
     justify-content: space-around;
     align-items: center;    
 }
+
+
+
+

@@ -9,7 +9,7 @@
 
  .contenedor-contacto{
     @extend .contenedor;
-    background-color: $key-color;
+    background-color: rgba(119, 166, 18, .1);
  }
 
  .button-animation{
@@ -17,10 +17,11 @@
    border: none;
    border-radius: 5px;
    background-color: $key-color;
+   font-size: $button-size;
    padding: 3px;
        a{
            text-decoration: none;
-           color: $dark-color;
+           color: $secondary-color;
        }
        &:hover{
            background-color: $secondary-color;
@@ -34,8 +35,16 @@
 .button-animation-enviar{
    @extend .button-animation;
    background-color: $secondary-color;
-   a{
-      color: white;
+      a{
+         text-decoration: none;
+         color: $key-color;
+   }
+   &:hover{
+         background-color: $key-color;
+         transition: 1s;
+         a{
+            color: $secondary-color;
+         }
    }
 }
 
