@@ -6,21 +6,24 @@
     li{
         a{
             color: $secondary-color;
-            text-decoration: none;
-            font-weight: $font-regular;
             font-size: $nav-size;
+            /*Subrayado animado*/
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+              &:hover{
+                color: $secondary-color;
+                /*Subrayado animado*/
+                background-size: 100% 2px;
+              }
         }
+
     }
     
     img{
         width: $favicon-size;
-        animation-name: logo-alpha;
-        animation-duration: 3s;
     }
     
-}
-
-@keyframes logo-alpha{
-    from{opacity:0}
-    to{opacity:1}
 }

@@ -7,9 +7,18 @@
 }
 .nav-animal li a {
   color: rgb(40, 64, 3);
-  text-decoration: none;
-  font-weight: 400;
   font-size: 1.6rem;
+  /*Subrayado animado*/
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.nav-animal li a:hover {
+  color: rgb(40, 64, 3);
+  /*Subrayado animado*/
+  background-size: 100% 2px;
 }
 .nav-animal img {
   width: 170px;
@@ -17,14 +26,6 @@
   animation-duration: 3s;
 }
 
-@keyframes logo-alpha {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .contenedor, .contenedor-contacto {
   background-color: rgba(205, 227, 158, 0.1);
   width: 100%;
