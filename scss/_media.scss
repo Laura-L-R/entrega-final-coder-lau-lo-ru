@@ -6,6 +6,10 @@
     .alquiler-sala{
         @include grid1(repeat(2,1fr), repeat(2,auto), 10px, "s1 s2" "s3 s4", center);
     }
+
+    .galeria-an{
+        @include grid1(repeat(2,6fr), repeat(5, 300px), 10px,"fot1 fot2" "fot3 fot4" "fot5 fot6" "fot7 fot8" "fot9 fot10", center);
+    }
     
     footer{
         flex-direction: column;
@@ -41,6 +45,10 @@
     
     .alquiler-sala{
         @include grid1(1fr, repeat(4,auto), 10px, "s1" "s2" "s3" "s4", center);
+    }
+
+    .galeria-an{
+        @include grid1(1fr, repeat(10, 300px), 10px,"fot1" "fot2" "fot3" "fot4" "fot5" "fot6" "fot7" "fot8" "fot9" "fot10", center);
     }
 
     footer{
