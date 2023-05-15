@@ -1,4 +1,4 @@
-@media (width < 1058px){
+@media (width < 768px){
     .clases-an{
         @include grid1(repeat(2,1fr), repeat(5,auto), 5px,"clat clat" "cl1 cl2" "cl3 cl4" "cl5 cl6" "cl7 cl8", center);   
     }
@@ -38,7 +38,7 @@
     }  
 }
 
-@media (width < 768px){
+@media (width < 576px){
     .clases-an{
         @include grid1( 1fr, repeat(9,auto), 5px, "clat" "cl1" "cl2" "cl3" "cl4" "cl5" "cl6" "cl7" "cl8", center);   
     }
@@ -75,49 +75,14 @@
         display: flex;
         flex-direction: column;    
     }   
-}
 
-@media (width < 478px){
-    .clases-an{
-        @include grid1( 1fr, repeat(9,auto), 5px, "clat" "cl1" "cl2" "cl3" "cl4" "cl5" "cl6" "cl7" "cl8", center);
-    }
-    
-    .alquiler-sala{
-        @include grid1(1fr, repeat(4,auto), 10px, "s1" "s2" "s3" "s4", center);
+    .margin-imgs {
+        margin: 10px 10px;
+        width: 70%;
     }
 
-    footer{
-        flex-direction: column;
-        width: auto;
-
-        div:nth-child(2){
-            margin: 15px 0;            
-        }
-
-        ul{
-            li{
-                font-size: 1.4rem;
-                text-align: center;
-            }
-        }
-
-        svg{
-            width: 40px;
-        }
-    }
-
-        .imagenes-flex{
-            display: flex;
-            flex-direction: column;    
-        }
-
-        .margin-imgs {
-            margin: 10px 10px;
-            width: 70%;
-        }
-
-        iframe{
-            width: 75%;
-            height: 75%;
-        }       
+    iframe{
+        width: 75%;
+        height: 75%;
+    }      
 }

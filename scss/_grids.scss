@@ -5,55 +5,67 @@
         }
             .clase1{
             grid-area: cl1;
-            width: 250px;
+            margin: 5px;
+            
         }
             .clase2{
             grid-area: cl2;
-            width: 250px;
+            margin: 5px;
+           
         }
             .clase3{
             grid-area: cl3;
-            width: 250px;
+            margin: 5px;
+            
         }    
         .clase4{
             grid-area: cl4;
-            width: 250px;
+            margin: 5px;
+           
         }
         .clase5{
         grid-area: cl5;
-        width: 250px;
-    }
+        margin: 5px;
+        
+        }
         .clase6{
         grid-area: cl6;
-        width: 250px;
-    }
+        margin: 5px;
+       
+        }
         .clase7{
         grid-area: cl7;
-        width: 250px;
-    }    
+        margin: 5px;
+        
+        }    
     .clase8{
         grid-area: cl8;
-        width: 250px;
-    }
+        margin: 5px;
+        
+        }
 }
 
 .alquiler-sala{
     @include grid1(repeat(4,1fr), auto, 10px,"s1 s2 s3 s4", center);
         .sala1{
         grid-area: s1;
-        width: 250px;
+        margin: 5px;
+        
         }
         .sala2{
             grid-area: s2;
-            width: 250px;        
+            margin: 5px;
+                   
         }
         .sala3{
             grid-area: s3;
-            width: 250px;        
+            margin: 5px;
+                  
         }
         .sala4{
             grid-area: s4;
-            width: 250px;       
+            margin: 5px;
+                   
         }
 }
 
